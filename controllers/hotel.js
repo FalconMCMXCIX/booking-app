@@ -26,7 +26,6 @@ export const updateHotel = async (req, res, next) => {
 }
 
 export const deleteHotel = async (req, res, next) => {
-    const newHotel = new Hotel(req.body);
 
     try{
         await Hotel.findByIdAndDelete(
